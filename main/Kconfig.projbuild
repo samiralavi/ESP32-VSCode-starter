@@ -1,0 +1,48 @@
+menu "Firmware Configuration"
+
+
+    config DEV_ID
+        string "Device ID"
+        default "000"
+        help
+            Specify the unique identifier for the device.
+            This ID is used for device identification and communication purposes.
+
+    config MAC_ADDRESS
+        string "MAC Address"
+        default "70:b3:d5:27:00:00"
+        help
+            Specify the MAC address for the device.
+            This address is used for network communication and identification purposes.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "password"
+        help
+            Specify the password for the WiFi network.
+            This password is used for authentication when connecting to the network.
+
+    config SSID_PREFIX
+        string "SSID Prefix"
+        default "ACTIVECPP_"
+        help
+            Specify the prefix for the SSID (WiFi network name).
+            This prefix is used to generate the full SSID for the device.
+
+    config NTP_SERVER
+        string "NTP Server"
+        default "pool.ntp.org"
+        help
+            Specify the NTP server for time synchronization.
+            This server is used to retrieve accurate time information for the device.
+
+    config WIFI_PROV_MGR_MAX_RETRY_CNT
+        int
+        default 5
+        prompt "Max retries before reseting provisioning state machine"
+        help
+            Set the Maximum retry to avoid reconnecting to an inexistent AP or if credentials
+            are misconfigured. Provisioned credentials are erased and internal state machine
+            is reset after this threshold is reached.
+
+endmenu

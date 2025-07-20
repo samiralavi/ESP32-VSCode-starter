@@ -1,0 +1,6 @@
+dependencies:
+  espressif/esp-idf-cxx: ^1.0.2-beta
+  espressif/mdns: ^1.8
+  espp/logger: ^1.0
+  espp/cli: ^1.0
+  espp/led: ^1.0

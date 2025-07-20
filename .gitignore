@@ -1,0 +1,9 @@
+build/
+warnings.txt
+sdkconfig.old
+dependencies.lock
+managed_components/
+.aws/
+dist/
+sdkconfig
+build_*/

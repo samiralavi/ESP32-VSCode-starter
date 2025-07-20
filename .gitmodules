@@ -1,0 +1,3 @@
+[submodule "components/activecpp-esp32/activecpp"]
+	path = components/activecpp/activecpp
+	url = https://github.com/samiralavi/activecpp
