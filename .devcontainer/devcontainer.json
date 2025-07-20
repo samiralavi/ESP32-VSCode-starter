@@ -31,7 +31,9 @@
     "runArgs": [
         "--privileged",
         "-v",
-        "/dev/bus/usb/:/dev/bus/usb"
+        "/dev/bus/usb/:/dev/bus/usb",
+        "--volume",
+        "${env:HOME}/.ssh:/home/ubuntu/.ssh:ro"
     ],
     "containerEnv": {
         "IDF_PATH": "/home/ubuntu/esp/esp-idf"
